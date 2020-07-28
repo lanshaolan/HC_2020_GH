@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: url(./img/bg.png); 
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+// 導覽列
+  .navbar {
+    width: 100%;
+    object-fit: cover;
+    border: 0.1px solid rgb(255,255,255);
+  }
+// 輪播圖
+  .carousel-item{ 
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+  }
+
+  #carouselExampleFade{
+    z-index: 1;
+  }
+
+  //神奇圈圈 
+#box {
+  display: inline-block;
+  border: 3px solid rgba( 255, 255, 255, 0.5);
+  border-radius: 360px;
+  width: 200px;
+  height: 200px;
+  background-color: rgba( 255, 255, 255, 0);
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  object-fit: cover;
+
+
+  #ball{
+    
+    width: 105%;
+    height: auto;
+  }
+
+  #r1 {
+    object-fit: cover;
+    position: absolute;
+    top: -10px;
+    left: 55px;
+  }
+
+  #r2 {
+    object-fit: cover;
+    position: absolute;
+    top: 70px;
+    left: 150px;
+  }
+
+  #r3 {
+    object-fit: cover;
+    position: absolute;
+    bottom: -10px;
+    right: 0px;
+  }
+  
+  #r4 {
+    object-fit: cover;
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+  }
+  
+  #r5 {
+    object-fit: cover;
+    position: absolute;
+    top: 70px;
+    right: 150px;
+  }
+}
+ 
+
+#ball {
+  animation: rotate 15s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+// 酒種介紹
+.row {
+  margin: 50px;
+  object-fit: cover;
+}
+// 蘭姆酒
+.sake1 {
+  box-shadow: 20px 20px #facd96;
+}
+
+// 伏特加
+.sake2 {
+  box-shadow: -20px 20px #e5edf8;
+}
+// 龍舌蘭
+.sake3 {
+  box-shadow: 20px 20px #f8dae9;
+}
+
+// 琴酒
+.sake4 {
+  box-shadow: -20px 20px #e7dcec;
+}
+
+// 威士忌
+.sake5 {
+  box-shadow: 20px 20px #feed91;
+}
+// 文字區
+.word {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+// 圖文交差排列設定─大於小於某數字時看的到看不到
+.g1 {
+  display: none;
+}
+
+.g2 {
+  display: block;
+}
+
+@media only screen and (max-width:767px) {
+  .g1 { display: block; }
+  .g2 { display: none; }
+}
+
+
+// footer
+.text-center {
+  background-color: #252525;
+}
+

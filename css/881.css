@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url(./img/signimg/bg1920.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#logo {
+  margin-bottom: 30px;
+}
+
+#stop {
+  padding: 0;
+}
+/*# sourceMappingURL=881.css.map */
