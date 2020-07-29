@@ -1,0 +1,216 @@
+$h-Orange:#facd96;
+$h-blue:#e5edf8;
+$h-pink:#f8dae9;
+$h-purple:#e7dcec;
+$h-yellow:#feed91;
+$h-green:#e6f1e1;
+$h-gold:#B9A274;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+    color: #525252;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    
+  }
+
+
+#background {
+    img {
+        width: 100%;
+        position: fixed;
+        
+
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+}
+
+#banner {
+    position: static;
+
+    button {
+        border: 0;
+        
+        
+    }
+}
+
+#logo-img {
+    z-index: 0;
+    margin: 30px;
+
+}
+
+// 返回
+#use-it{
+    display: none;
+}
+
+.icon{
+    display: inline-block;
+}
+
+.icon img{
+    width: 50px;
+    height: auto;
+}
+
+.is-check{
+    display: none;
+}
+
+#use-it:checked+label .non-check{
+    display: none;
+}
+#use-it:checked+label .is-check{
+    display:inline-block;
+}
+
+
+// 內容
+#box {
+    z-index: 1;
+    
+   
+}
+
+#word {
+    padding: 30px;
+    margin: 20px auto;
+
+}
+
+#btn {
+    div {
+        border: 1px ;
+        background: h-blue;
+        width: 100%;
+        width: auto auto;
+        cursor: pointer;
+
+    }
+
+}
+
+#back {
+    width: 50px;
+    background-color: (255,255,255,0);
+
+}
+
+// 按鈕
+
+
+#block{
+    
+     
+    button {
+        border: 4px solid black;
+        padding: 10px 20px;
+        position: relative;
+        background-color: transparent;
+        margin: 10px ;
+        transition: 0.3s;
+        
+        
+      
+        span {
+          
+          text-transform: uppercase;
+          font-weight: bold;
+          font-family: "Roboto", sans-serif;
+          letter-spacing: 5px;
+        }
+      
+        &:after {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          height: 100%;
+          width: 100%;
+          background-color:gold;
+          content: "";
+          z-index: -1;
+          transition: transform 0.2s ease-in, width 0.2s ease-out 0.2s;
+        
+        }
+      
+        &:hover {
+          &:after {
+            transform: translate(-10px, -10px);
+            width: calc(100% - 10px);
+          }
+        }
+      
+        &:active {
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+
+ 
+    
+}
+
+#stop {
+    position: fixed;
+    z-index: 2;
+    top: 450px;
+    right: 0px;
+    height: 80%;
+    img {
+        height: 30%;
+    }
+
+
+
+
+    
+    
+    
+}
+
+
+
+
+
+#page {
+    margin: 30px auto;
+    img {
+        margin: 50px auto;
+        
+    }
+  
+
+}
+
+footer {
+    padding: 100px;
+    text-align: center;
+    background: #252525;
+    color: white;
+}
+
+footer span {
+    font-family: Ngaan;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+
+
+  
+  
+  

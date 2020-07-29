@@ -1,0 +1,160 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 微軟正黑體;
+  color: #525252;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+}
+
+#background img {
+  width: 100%;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#banner {
+  position: static;
+}
+
+#banner button {
+  border: 0;
+}
+
+#logo-img {
+  z-index: 0;
+  margin: 30px;
+}
+
+#use-it {
+  display: none;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon img {
+  width: 50px;
+  height: auto;
+}
+
+.is-check {
+  display: none;
+}
+
+#use-it:checked + label .non-check {
+  display: none;
+}
+
+#use-it:checked + label .is-check {
+  display: inline-block;
+}
+
+#box {
+  z-index: 1;
+}
+
+#word {
+  padding: 30px;
+  margin: 20px auto;
+}
+
+#btn div {
+  border: 1px;
+  background: h-blue;
+  width: 100%;
+  width: auto auto;
+  cursor: pointer;
+}
+
+#back {
+  width: 50px;
+  background-color: 255, 255, 255, 0;
+}
+
+#block button {
+  border: 4px solid black;
+  padding: 10px 20px;
+  position: relative;
+  background-color: transparent;
+  margin: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#block button span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5px;
+}
+
+#block button:after {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 100%;
+  width: 100%;
+  background-color: gold;
+  content: "";
+  z-index: -1;
+  -webkit-transition: width 0.2s ease-out 0.2s, -webkit-transform 0.2s ease-in;
+  transition: width 0.2s ease-out 0.2s, -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, width 0.2s ease-out 0.2s;
+  transition: transform 0.2s ease-in, width 0.2s ease-out 0.2s, -webkit-transform 0.2s ease-in;
+}
+
+#block button:hover:after {
+  -webkit-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
+  width: calc(100% - 10px);
+}
+
+#block button:active:after {
+  width: 100%;
+}
+
+#stop {
+  position: fixed;
+  z-index: 2;
+  top: 450px;
+  right: 0px;
+  height: 80%;
+}
+
+#stop img {
+  height: 30%;
+}
+
+#page {
+  margin: 30px auto;
+}
+
+#page img {
+  margin: 50px auto;
+}
+
+footer {
+  padding: 100px;
+  text-align: center;
+  background: #252525;
+  color: white;
+}
+
+footer span {
+  font-family: Ngaan;
+  font-size: 20px;
+  padding: 10px;
+}
+/*# sourceMappingURL=page.css.map */
