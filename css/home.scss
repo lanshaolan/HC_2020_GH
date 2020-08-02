@@ -48,6 +48,7 @@
   object-fit: cover;
 
 
+
   #ball{
     
     width: 105%;
@@ -169,8 +170,6 @@
 // 返回頁首
 #back-to-top {
 position: fixed;
-right: 30px;
-bottom: 30px;
 cursor: pointer;
 
 img {
@@ -179,6 +178,8 @@ img {
   max-width: 100%;
   max-height: 100%;
   margin: auto;
+  right: 30px;
+  bottom: 30px;
 }
 
 @media only screen and (max-width:767px) {
