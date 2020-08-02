@@ -74,5 +74,17 @@ window.onload = () => {
     top: element.offsetTop,
     behavior:"smooth"
   })
-  }
+}
+// back-to-top
+var btt = document.getElementById("btt");
+
+btt.onclick = () => {
+  var target = btt.getAttribute("data-to-target");
+  var offset = btt.getAttribute("data-to-offset");
+
+  window.scrollTo({
+    top: btt.offsetTop - offset,
+    behavior: "smooth"
+  })
+}
 }
